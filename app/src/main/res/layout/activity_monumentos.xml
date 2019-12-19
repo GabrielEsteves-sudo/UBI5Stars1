@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fundo1"
+        tools:context=".MonumentosActivity"
+        tools:layout_editor_absoluteY="1dp">
+
+        <Button
+            android:id="@+id/b_back"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="90dp"
+            android:text="Voltar"
+            android:background="@drawable/colorbut"
+            android:onClick="voltar"
+            android:layout_height="70dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Button
+            android:id="@+id/b_go"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="90dp"
+            android:background="@drawable/colorbut"
+            android:text="Ir"
+            android:onClick="go"
+            android:layout_height="70dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/categoria_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Categoria"
+            android:textSize="20dp"
+            android:gravity="center"
+            app:layout_constraintLeft_toRightOf="@id/b_back"
+            app:layout_constraintRight_toLeftOf="@id/b_go"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/nome_t"/>
+
+        <TextView
+            android:id="@+id/nome_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Nome do monumento"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/b_back"/>
+
+        <ImageView
+            android:id="@+id/imagens"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nome_t"/>
+
+        <TextView
+            android:id="@+id/informacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Informação"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imagens"/>
+
+        <TextView
+            android:id="@+id/informacao_texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Aqui vem a informação, aqui realmente vai vir muita informação. blabla blah blah"
+            android:textSize="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/informacao"/>
+        <RatingBar
+            android:outlineAmbientShadowColor="@color/colorAccent"
+            android:outlineSpotShadowColor="@color/colorAccent"
+            android:id="@+id/rating"
+            android:isIndicator="true"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/informacao_texto"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <TextView
+            android:id="@+id/reviwes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Avaliação"
+            android:textSize="15dp"
+
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/b_rat"
+            app:layout_constraintTop_toBottomOf="@id/rating"/>
+        <Button
+            android:id="@+id/b_rat"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:layout_width="200dp"
+            android:text="Avaliar"
+            android:onClick="ir_avaliar"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="@drawable/colorbut"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/table_comment"
+            app:layout_constraintTop_toBottomOf="@+id/reviwes"/>
+
+        <TextView
+            android:id="@+id/REVIEWS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Comentários"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/table_comment"
+            app:layout_constraintTop_toBottomOf="@id/b_rat"/>
+
+
+
+
+        <TableLayout
+            android:id="@+id/table_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#5B7ECFF8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/b_rat"
+            android:paddingBottom="30dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

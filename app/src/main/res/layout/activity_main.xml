@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+     <ImageView
+        android:id="@+id/imageMap1"
+         android:layout_width="2000px"
+         android:layout_height="1400px"
+        android:background="@drawable/ic_mapa_dentro"
+        android:scaleType="matrix"
+         android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         android:contentDescription="TODO" />
+
+
+
+
+
+ </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+</ScrollView>
+
+    <ScrollView
+        android:id="@+id/scroll2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+                <ImageView
+                    android:id="@+id/imageMap2"
+                    android:layout_width="3000px"
+                    android:layout_height="2100px"
+                    android:background="@drawable/ic_mapa_dentro"
+                    android:scaleType="matrix"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="TODO" />
+
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scroll3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageMap3"
+                    android:layout_width="4000px"
+                    android:layout_height="2800px"
+                    android:background="@drawable/ic_mapa_dentro"
+                    android:scaleType="matrix"
+                    android:visibility="invisible"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="TODO" />
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+
+
+    <Button
+        android:id="@+id/btn_zoomin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="aproximar"
+        android:text="+"
+        android:background="@drawable/colorbut"
+        android:textSize="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_zoomout"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pesquisa"/>
+
+    <Button
+        android:id="@+id/btn_zoomout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="desaproximar"
+        android:text="-"
+        android:background="@drawable/colorbut"
+        android:textSize="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/btn_zoomin"/>
+
+    <SearchView
+        android:id="@+id/pesquisa"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="#0094cc"
+        android:onClick="pesquisar"
+        app:layout_constraintBottom_toTopOf="@id/btn_zoomin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        android:orientation="vertical"
+        android:background="#bbdefb"
+        android:id="@+id/LLinfo"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/NomeMonumento"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:id="@+id/nome_monumento"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/InformacaoMonumento"
+            android:id="@+id/info_monumento"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="abrir_monumento"
+            android:text="@string/MaisMonumento"
+            android:background="#0094cc"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

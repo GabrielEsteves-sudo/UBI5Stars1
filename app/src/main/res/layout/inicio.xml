@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fundo1"
+        tools:context=".inicio">
+
+
+
+        <Button
+            android:id="@+id/play"
+            android:layout_marginTop="30dp"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:onClick="startActivity2"
+            android:text="MAPA"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            app:layout_constraintTop_toBottomOf="@id/logo"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            android:background="@drawable/colorbut"
+            android:textColor="#000000"
+            />
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/logo"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+        </com.google.android.gms.ads.AdView>
+        <EditText
+            android:id="@+id/writename"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Insira o seu nome..."
+            android:textColorHint="@color/colorAccent"
+
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/play"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_marginLeft="20dp"
+
+            android:src="@drawable/logo2"
+            android:layout_marginTop="100dp"
+            app:layout_constraintBottom_toTopOf="@+id/play"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

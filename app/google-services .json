@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "663177433523",
+    "firebase_url": "https://ubi5stars-9afb6.firebaseio.com",
+    "project_id": "ubi5stars-9afb6",
+    "storage_bucket": "ubi5stars-9afb6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663177433523:android:88a9c72da91d48894e7bc6",
+        "android_client_info": {
+          "package_name": "pt.ubi.di.pdm.ubi5stars"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "663177433523-crh2fi0lkt9afr2a72uaamqphrin5agf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pt.ubi.di.pdm.ubi5stars",
+            "certificate_hash": "6d8014aeb51dd666705855498db14bf36c11a2db"
+          }
+        },
+        {
+          "client_id": "663177433523-i39amlmclqus7vl78sf41rpm6i8fd8cn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pt.ubi.di.pdm.ubi5stars",
+            "certificate_hash": "63f8015f3d0b5dad9ddf4c4423ff9bbea4c6ee9b"
+          }
+        },
+        {
+          "client_id": "663177433523-7j0pjq8t75ifhi9a76inj2t00pkoiv3j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGJIXGjw2zFSnt1bHMmHC9Bc59XwiRbdg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "663177433523-7j0pjq8t75ifhi9a76inj2t00pkoiv3j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
