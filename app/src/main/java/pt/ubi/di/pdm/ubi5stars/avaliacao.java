@@ -41,7 +41,7 @@ public class avaliacao extends Activity {
 
         rat = (RatingBar) this.findViewById(R.id.rating);
         Intent iCameFromActivity1=getIntent();
-        System.out.println("OLA"+iCameFromActivity1.getStringExtra("id_monumento"));
+        //System.out.println("OLA"+iCameFromActivity1.getStringExtra("id_monumento"));
         id_mon=iCameFromActivity1.getStringExtra("id_monumento");
 
 
@@ -94,7 +94,7 @@ public class avaliacao extends Activity {
                     ++i;
                     conta_coment=i;
                     String msgContent=("comentarios ++ "+datas.getValue());
-                    System.out.println(msgContent+"-"+i+"-"+conta_coment);
+                    //System.out.println(msgContent+"-"+i+"-"+conta_coment);
                 }
 
                 databaseComentario = FirebaseDatabase.getInstance().getReference("Comentario");
@@ -143,7 +143,7 @@ public class avaliacao extends Activity {
                     if (i ==7 ) {
                         Double j= Double.parseDouble(""+msgContent);
                         media= ((j+rat2)/2);
-                        System.out.println("IIIIII"+media);
+                        //System.out.println("IIIIII"+media);
                         reference2.getRef().child("rating").setValue(""+media);
                     }
                 }

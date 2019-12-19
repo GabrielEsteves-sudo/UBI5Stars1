@@ -50,10 +50,10 @@ public class Pesquisa extends Activity {
         list.add(" WOOL ON RESIDENCE_L is not an artist ");
         list.add("ARTE URBANA  :  WOOL ON RESIDENCE_Tamara Alves ");
         list.add(" WOOL ON RESIDENCE_Tamara Alves ");
-        list.add("ARTE URBANA  :  Insta. �O observat�rio � _ dojla  WOOL �19 ");
-        list.add(" Insta. �O observat�rio � _ dojla  WOOL �19 ");
-        list.add("ARTE URBANA  :  EXTRA WOOL PANT�NIO ");
-        list.add(" EXTRA WOOL PANT�NIO ");
+        list.add("ARTE URBANA  : WOOL O OBSERVATÓRIO");
+        list.add(" WOOL O OBSERVATÓRIO");
+        list.add("ARTE URBANA  :  EXTRA WOOL PANTÓNIO ");
+        list.add(" EXTRA WOOL PANTÓNIO ");
         list.add("ARTE URBANA  :  WOOL OFF FEST MARIO BELEM COVILHA ");
         list.add(" WOOL OFF FEST MARIO BELEM COVILHA ");
         list.add("ARTE URBANA  :  BOSOLETTI ");
@@ -70,10 +70,10 @@ public class Pesquisa extends Activity {
         list.add(" CENTRO HOSPITALAR COVA DA BEIRA ");
         list.add("ZONA DESPORTIVA  :  COMPLEXO DESPORTIVO ");
         list.add(" COMPLEXO DESPORTIVO ");
-        list.add("ZONA DE LAZER  :  JARDIM P�BLICO ");
-        list.add(" JARDIM P�BLICO ");
-        list.add("HOTEL  :  HOTEL PURAL� ");
-        list.add(" HOTEL PURAL� ");
+        list.add("ZONA DE LAZER  :  JARDIM PÚBLICO ");
+        list.add(" JARDIM PÚBLICO ");
+        list.add("HOTEL  :  HOTEL PURALÃ ");
+        list.add(" HOTEL PURALÃ ");
         list.add("HOTEL  :  HOTEL SANTA EUFEMIA ");
         list.add(" HOTEL SANTA EUFEMIA ");
         list.add("HOTEL  :  HOTEL DONA MARIA ");
@@ -82,30 +82,30 @@ public class Pesquisa extends Activity {
         list.add(" IGREJA SANTA MARIA MAIOR ");
         list.add("MONUMENTO  :  RELOGIO ");
         list.add(" RELOGIO ");
-        list.add("IGREJA  :  CAPELA S�O MARTINHO ");
-        list.add(" CAPELA S�O MARTINHO ");
+        list.add("IGREJA  :  CAPELA SÃO MARTINHO ");
+        list.add(" CAPELA SÃO MARTINHO ");
         list.add("ESCOLA  :  BIBLIOTECA ");
         list.add(" BIBLIOTECA ");
         list.add("MONUMENTO  :  ARCO DA UBI ");
         list.add(" ARCO DA UBI ");
         list.add("IGREJA  :  IGREJA ENGENHARIAS ");
         list.add(" IGREJA ENGENHARIAS ");
-        list.add("IGREJA  :  IGREJA DE S�O SILVESTRE ");
-        list.add(" IGREJA DE S�O SILVESTRE ");
+        list.add("IGREJA  :  IGREJA DE SÃO SILVESTRE ");
+        list.add(" IGREJA DE SÃO SILVESTRE ");
         list.add("IGREJA  :  IGREJA DA MISERICORDIA ");
         list.add(" IGREJA DA MISERICORDIA ");
         list.add("MONUMENTO  :  POLARINHO ");
         list.add(" POLARINHO ");
         list.add("MONUMENTO  :  CHAFARIZ ");
         list.add(" CHAFARIZ ");
-        list.add("IGREJA  :  IGREJA NOSSA SENHORA DA CONCEI��O ");
-        list.add(" IGREJA NOSSA SENHORA DA CONCEI��O ");
+        list.add("IGREJA  :  IGREJA NOSSA SENHORA DA CONCEIÇÃO ");
+        list.add(" IGREJA NOSSA SENHORA DA CONCEIÇÃO ");
         list.add("MUSEU  :  MUSEU DE ARTE SACRA ");
         list.add(" MUSEU DE ARTE SACRA ");
         list.add("MONUMENTO  :  JANELA ");
         list.add(" JANELA ");
-        list.add("MONUMENTO  :  C�MARA MUNICIPAL ");
-        list.add(" C�MARA MUNICIPAL ");
+        list.add("MONUMENTO  :  CÂMARA MUNICIPAL ");
+        list.add(" CÂMARA MUNICIPAL ");
         list.add("ZONA DE LAZER  :  SERRA DA ESTRELA ");
         list.add(" SERRA DA ESTRELA ");
         list.add("ESCOLA  :  FACULDADE CIENCIAS SOCIAS E HUMANAS ");
@@ -120,10 +120,10 @@ public class Pesquisa extends Activity {
         list.add(" FACULDADE CIENCIAS DA SAUDE ");
         list.add("ZONA COMERCIAL  :  SERRA SHOPPING ");
         list.add(" SERRA SHOPPING ");
-        list.add("ZONA DESPORTIVA  :  PAVILH�O DESPORTIVO ");
-        list.add(" PAVILH�O DESPORTIVO ");
-        list.add("MONUMENTO  :  NOSSA SENHORA DA CONCEI��O ");
-        list.add(" NOSSA SENHORA DA CONCEI��O ");
+        list.add("ZONA DESPORTIVA  :  PAVILHÃO DESPORTIVO ");
+        list.add(" PAVILHÃO DESPORTIVO ");
+        list.add("MONUMENTO  :  NOSSA SENHORA DA CONCEIÇÃO ");
+        list.add(" NOSSA SENHORA DA CONCEIÇÃO ");
         list.add("ESCOLA  :  REITORIA ");
         list.add(" REITORIA ");
         list.add("MONUMENTO  :  MIRADOURO DA REITORIA ");
@@ -169,7 +169,7 @@ public class Pesquisa extends Activity {
 
                 int po = list.indexOf(o);
 
-                System.out.println(po+"xxxx "+((po/2)+1));
+                //System.out.println(po+"xxxx "+((po/2)+1));
 
                 monu_abre(po);
 

@@ -76,7 +76,7 @@ public class MonumentosActivity extends AppCompatActivity {
 
         dar_rating();
         Intent iCameFromActivity1=getIntent();
-        System.out.println("OLA"+iCameFromActivity1.getStringExtra("monumento"));
+        //System.out.println("OLA"+iCameFromActivity1.getStringExtra("monumento"));
         a=iCameFromActivity1.getStringExtra("monumento");
         id_monumento=a;
 
@@ -148,7 +148,7 @@ public class MonumentosActivity extends AppCompatActivity {
                 for(DataSnapshot datas: dataSnapshot.getChildren()){
                    ++i;
                     String msgContent=(""+datas.getValue());
-                    System.out.println("AQUIIIIIIIIII"+msgContent);
+                    //System.out.println("AQUIIIIIIIIII"+msgContent);
                     if(i==1){
 
                         cat.setText(msgContent);
@@ -220,7 +220,7 @@ public class MonumentosActivity extends AppCompatActivity {
 
     public  void showTableLayout(){
         int rows = lista_com.size();
-        System.out.println("tamanho listAAA"+rows);
+        //System.out.println("tamanho listAAA"+rows);
         table.removeAllViews();
         table.setStretchAllColumns(true);
         table.bringToFront();
@@ -278,12 +278,12 @@ public class MonumentosActivity extends AppCompatActivity {
                             lista_com.add("Comentário : "+s_com);
                             lista_rat.add("Rating : "+s_rat);
                             lista_nom.add("User : "+s_nome);
-                            System.out.println("lista - "+j+"cont :"+msgContent);
+                            //System.out.println("lista - "+j+"cont :"+msgContent);
                         }
 
                 }
                 showTableLayout();
-                System.out.println("PASSOU AUQI");
+                //System.out.println("PASSOU AUQI");
                conta_coment=j;
 
             }
