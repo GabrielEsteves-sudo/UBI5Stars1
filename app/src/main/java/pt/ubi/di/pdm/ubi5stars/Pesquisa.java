@@ -134,7 +134,6 @@ public class Pesquisa extends Activity {
         list.add("CAPELA DE SANTA CRUZ");
 
 
-
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,list);
         listView.setAdapter(adapter);
 
